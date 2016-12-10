@@ -1,0 +1,43 @@
+<div>
+    <center>
+        <table class="table">
+            <thead>
+                <tr>
+                    
+                    <th>Movie</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>Movie</td>
+                    <td>
+                        <select >
+
+                        <option   ng-repeat="movie in movieList" value="{{movie.moviTitle}}">{{movie.moviTitle}}</option>
+
+                         </select>
+                    </td>
+                </tr>
+
+                    <tr><td>Theatre </td><td><select >
+
+
+                        <option  ng-repeat= "th in theatreList" value="{{th.theatre}}">{{th.theatre}}</option>
+                    </select></tr>
+                    
+                     <tr><td>City </td><td><select>
+                        <option  ng-repeat= "th in theatreList" value="{{th.city}}">{{th.city}}</option>
+                    </select></tr>
+
+                    <td></td>
+                    <td>{{showdate.showdate}}</td>
+                    <td>{{timeslot.timeslot}}</td>
+
+                    <td><button ng-click="addMapping(mapping)" class="btn btn-danger">Add</button></td>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </center>
